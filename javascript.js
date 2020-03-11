@@ -6,6 +6,9 @@ function showTime(){
     var d = new Date();
     var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     
+    h = h > 9 ? h : '0' + h;
+    m = m > 9 ? m : '0' + m;
+    
     document.getElementById("dateToday").innerHTML = days[d.getDay()];
     document.getElementById("timeHour").textContent = h;
     document.getElementById("timeMinute").textContent = m;
