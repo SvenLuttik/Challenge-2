@@ -16,6 +16,8 @@ function showTime(){
 
 showTime();
 
+
+
 //De code voor de seconden in anoloog begint hier
 var secondHand = document.querySelector('[data-second-hand]')
 
@@ -32,3 +34,24 @@ function setRotation(element, rotationRatio) {
 setInterval(setClock, 1000)
 
 setClock()
+
+
+
+//hier begint de code voor dark-mode
+function darkMode(){
+    var date = new Date();
+    var h = date.getHours();
+    var d = document.getElementById('theme');
+    
+    if (h > 17 || h < 6){
+        d.classList.add('dark');
+        console.log('nacht');
+    }else{
+        d.classList.remove('dark');
+        console.log('dag');
+    }
+}
+
+setInterval(darkMode, 1000)
+
+darkMode();
