@@ -25,12 +25,13 @@ main{
     justify-content: space-around;
 }
 
-article {
-    min-height: 200px;
-}
-
 h1{
     font-size: 3em;
+    margin: 0;
+}
+
+h2{
+    font-size: 2em;
     margin: 0;
 }
 
@@ -86,6 +87,7 @@ p{
         background: rgba(225,225,225,0.2);
         min-width: 350px; 
         padding: 25px;
+        border: 1px solid #6b604a;
         border-radius: 5%;
     }
 }
@@ -104,6 +106,20 @@ p{
         min-width: 350px; 
         padding: 25px;
         border-radius: 10%;
+    }
+    h1{
+        font-size: 5em;
+        margin-top: 50px;
+    }
+
+    h2{
+        font-size: 5em;
+        margin-top: 100px;
+    }
+
+    p{
+        font-size: 10em;
+        margin: 0;
     }
 }
 
