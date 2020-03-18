@@ -18,10 +18,15 @@ main{
     font-family: 'Lato', sans-serif;
     margin: auto;
     width: 95%;
+    max-width: 900px;
     padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+article {
+    min-height: 200px;
 }
 
 h1{
@@ -67,4 +72,42 @@ p{
     background: #000;
     color: #6b604a;
     transition: 1s;
+}
+
+/* --- tablet --- */
+@media (min-width: 600px) { 
+    main{
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    article{
+        background: rgba(225,225,225,0.2);
+        min-width: 350px; 
+        padding: 25px;
+        border-radius: 5%;
+    }
+}
+
+
+/* --- desktop-small --- */
+@media (min-width: 1000px) {
+    main{
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    article{
+        background: rgba(225,225,225,0.1);
+        min-width: 350px; 
+        padding: 25px;
+        border-radius: 10%;
+    }
+}
+
+/* --- desktop-large --- */
+@media (min-width: 1800px) { 
+    
 }

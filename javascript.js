@@ -4,12 +4,17 @@ function showTime(){
     var h = date.getHours();
     var m = date.getMinutes();
     var d = date.getDay();
+    var today = date.getDate();
+    var month = date.getMonth();
     var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var months = ["January","February","March","April","May","June","july","August","September","October","November","December"];
     
+    //
     h = h > 9 ? h : '0' + h;
     m = m > 9 ? m : '0' + m;
     
     document.getElementById("dateToday").innerHTML = days[d];
+    document.getElementById("dateMonth").innerHTML = today + " / " + months[month];
     document.getElementById("timeHour").textContent = h;
     document.getElementById("timeMinute").textContent = m;
     
@@ -49,13 +54,13 @@ function darkMode(){
     
     if (h > 17 || h < 6){
         d.classList.add('dark');
-        console.log('nacht');
     }else{
         d.classList.remove('dark');
-        console.log('dag');
     }
 }
 
 setInterval(darkMode, 1000)
 
 darkMode();
+
+
