@@ -3,17 +3,17 @@ function showTime(){
     var date = new Date();
     var h = date.getHours();
     var m = date.getMinutes();
-    var d = new Date();
+    var d = date.getDay();
     var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     
     h = h > 9 ? h : '0' + h;
     m = m > 9 ? m : '0' + m;
     
-    document.getElementById("dateToday").innerHTML = days[d.getDay()];
+    document.getElementById("dateToday").innerHTML = days[d];
     document.getElementById("timeHour").textContent = h;
     document.getElementById("timeMinute").textContent = m;
     
-    setTimeout(showTime, 1000);
+    setInterval(showTime, 1000);
     
 }
 
