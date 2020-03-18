@@ -14,7 +14,7 @@ function showTime(){
     m = m > 9 ? m : '0' + m;
     
     document.getElementById("dateToday").innerHTML = days[d];
-    document.getElementById("dateMonth").innerHTML = today + " / " + months[month];
+    document.getElementById("dateMonth").innerHTML = today + " " + months[month];
     document.getElementById("timeHour").textContent = h;
     document.getElementById("timeMinute").textContent = m;
     
