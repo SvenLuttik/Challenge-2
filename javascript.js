@@ -13,8 +13,7 @@ function showTime(){
     document.getElementById("timeHour").textContent = h;
     document.getElementById("timeMinute").textContent = m;
     
-    //dit is geen setInterval omdat de seconde klok het dan blijkbaar niet doet...
-    setTimeout(showTime, 1000);
+    setInterval(showTime, 1000);
     
 }
 
