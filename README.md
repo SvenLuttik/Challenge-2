@@ -7,13 +7,11 @@ Challenge 2 - klok
 Sven Luttik - 18121845
 
 ## Mijn site
-
-Als je wilt weten hoe mijn dashboard geworden is, klik dan deze link.
+Als je wilt weten hoe mijn klok is geworden, klik dan deze link.
 [Challenge 2](https://svenluttik.github.io/Challenge-2/)
 
 
 ### Hoe heb ik dit allemaal gedaan?
-
 Mijn code is opgedeeld in drie delen: Datum en tijd, analoog seconden klok en de nacht modus. 
 
 Ik heb heel veel vershillende variabelen aangemaakt die verschillende die allemaal verschillende tijd waardes moeten weer geven. Er zal vast wel een makkelijkere en kortere manier zijn om dit te doen maar dit heb ik zelf kunnen maken, waar ik aardig trots op ben.
@@ -34,6 +32,8 @@ h = h > 9 ? h : '0' + h;
  m = m > 9 ? m : '0' + m;
 ```
 
+
+
 Het volgende stuk code zorg voor een seconde teller. Ik heb dit gedaan met behulp van een youtube tutorial
 ```
 var secondHand = document.querySelector('[data-second-hand]')
@@ -50,6 +50,8 @@ function setRotation(element, rotationRatio) {
 ```
 Ik heb hier twee DIVs voor gemaakt. De klok en de wijzer. Met deze functie zorg ik ervoor dat wijzer roteerd aan de hand van de huidige secondes.
 
+
+
 Dit is een simpelen if/else functie die kijkt of het later dan 18:00 of vroeger dan 06:00 is. Als het 'savonds is geeft hij de BODY de ID 'dark' wat er voor zorgt dat de kleuren veranderen. Anders haalt hij de ID weg.
 ```
 function darkMode(){
@@ -64,3 +66,7 @@ function darkMode(){
     }
 }
 ```
+
+
+
+Mijn breakpoints zijn minimaal dat geef ik toe. Ik kon niet zo heel veel dingen vinden om te veranderen per scherm. Ik heb voornamelijk de grote en afstand van elementen aangepast om zo weinig mogelijk wit ruimte te houden.
