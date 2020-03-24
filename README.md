@@ -1,4 +1,4 @@
-# Challenge 1 - Dashboard SpaceX
+# Challenge 2 - De Klok
 
 **Opdracht:**
 Challenge 2 - klok
