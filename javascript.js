@@ -9,7 +9,7 @@ function showTime(){
     var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     var months = ["January","February","March","April","May","June","july","August","September","October","November","December"];
     
-    //
+    //zorgt ervoor dat de tijd 00:00 is en niet 0:0
     h = h > 9 ? h : '0' + h;
     m = m > 9 ? m : '0' + m;
     
