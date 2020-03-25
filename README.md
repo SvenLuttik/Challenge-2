@@ -14,7 +14,7 @@ Als je wilt weten hoe mijn klok is geworden, klik dan deze link.
 ### Hoe heb ik dit allemaal gedaan?
 Mijn code is opgedeeld in drie delen: Datum en tijd, analoog seconden klok en de nacht modus. 
 
-Ik heb heel veel vershillende variabelen aangemaakt die verschillende die allemaal verschillende tijd waardes moeten weer geven. Er zal vast wel een makkelijkere en kortere manier zijn om dit te doen maar dit heb ik zelf kunnen maken, waar ik aardig trots op ben.
+Dit eerste stukje code laat de datum, dag en tijd zien om het scherm. Ik heb dat gedaan door heel veel variabelen aan te maken die allemaal een deel van de Date pakken. Er zal vast wel een makkelijkere en kortere manier zijn om dit te doen maar dit heb ik zelf kunnen maken, waar ik aardig trots op ben.
 ```
 var date = new Date();
 var h = date.getHours();
@@ -26,7 +26,7 @@ var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturda
 var months = ["January","February","March","April","May","June","july","August","September","October","November","December"];
 ```
 
-Dit stuk code moet er voor zorgen dat de tijd 02:09 zecht en niet 2:9.
+Dit stuk code moet er voor zorgen dat de tijd 02:09 zegt en niet 2:9.
 ```
 h = h > 9 ? h : '0' + h;
  m = m > 9 ? m : '0' + m;
